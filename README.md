@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Sui Remix MVP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A starter project for building **Sui Move modules** and **NFT marketplaces** using React + Sui Move.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Quickstart
 
-### `npm start`
+1. Clone the repo:  
+```bash
+git clone git@github.com:your-username/my_token.git
+cd my_token
+```
+2. Install dependencies:  
+```bash
+npm install
+```
+3. Start the frontend:  
+```bash
+npm start
+```
+4. Build Move modules:  
+```bash
+sui move build
+```
+5. Test Move modules:  
+```bash
+sui move test
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Description
 
-### `npm test`
+This project is built with **React** for the frontend and **Sui Move** for blockchain modules.  
+It includes templates for:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- NFT creation  
+- Marketplace interactions  
+- Token modules  
 
-### `npm run build`
+This README gives instructions for running both the frontend React app and Sui Move modules locally.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Sui Setup (Blockchain)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Install Sui CLI**  
+   Follow the official guide: [Sui Documentation](https://docs.sui.io/)
 
-### `npm run eject`
+2. **Check your active address**  
+```bash
+sui client active-address
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Build Move modules**  
+```bash
+sui move build
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Test Move modules**  
+```bash
+sui move test
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Example Workflow
+
+1. Create a new NFT module in `packages/my_module/Move.toml`  
+2. Build it:  
+```bash
+sui move build
+```
+3. Deploy locally or on testnet  
+4. Interact via React frontend using pre-built marketplace templates  
+
+---
+
+## License
+
+This project is released under the **MIT License**. See the `LICENSE` file for details.
+
+---
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Sui Documentation](https://docs.sui.io/)  
+- [Move Language](https://move-language.com/)  
+- [React Documentation](https://reactjs.org/)
